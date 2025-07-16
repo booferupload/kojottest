@@ -114,59 +114,60 @@
         <img src="images/pomoctechniczna2.png" class="help_img" style="width: 20px;">
     </div>
 
-    <div class="bottom_bar">
-        <div class="bottom_bar_grid">
-            <div class="bottom_element_grid" send="home">
-                <div class="bottom_element_image home_open"></div>
-                <p class="bottom_element_text">Pulpit</p>
-            </div>
-            <div class="bottom_element_grid" send="documents">
-                <div class="bottom_element_image documents"></div>
-                <p class="bottom_element_text open">Dokumenty</p>
-            </div>
-            <div class="bottom_element_grid" send="services">
-                <div class="bottom_element_image services"></div>
-                <p class="bottom_element_text">Usługi</p>
-            </div>
-            <div class="bottom_element_grid" send="qr">
-                <div class="bottom_element_image qr"></div>
-                <p class="bottom_element_text">Kod QR</p>
-            </div>
-            <div class="bottom_element_grid" send="more">
-                <div class="bottom_element_image more"></div>
-                <p class="bottom_element_text">Więcej</p>
-            </div>
-        </div>
+<div class="bottom_bar">
+    <div class="bottom_bar_grid">
+        <a href="home.html" class="bottom_element_grid">
+            <div class="bottom_element_image home"></div>
+            <p class="bottom_element_text">Pulpit</p>
+        </a>
+        <a href="documents.html" class="bottom_element_grid">
+            <div class="bottom_element_image documents"></div>
+            <p class="bottom_element_text">Dokumenty</p>
+        </a>
+        <a href="services.html" class="bottom_element_grid">
+            <div class="bottom_element_image services"></div>
+            <p class="bottom_element_text">Usługi</p>
+        </a>
+        <a href="qr.html" class="bottom_element_grid">
+            <div class="bottom_element_image qr qr_open"></div>
+            <p class="bottom_element_text open">Kod QR</p>
+        </a>
+        <a href="more.html" class="bottom_element_grid">
+            <div class="bottom_element_image more"></div>
+            <p class="bottom_element_text">Więcej</p>
+        </a>
     </div>
+</div>
+
     <p class="time_text" id="time"></p>
     <div class="id_image_data">
         <img draggable="false" class="id_image" src="images/XSZFxrl.png">
         <div class="inset">
 
         </div>
-        <div class="id_own_image" style="background-image: url('https://i.imgur.com/7vHo48p.jpg');"></div>
+        <div class="id_own_image" style="background-image: url('obraz.jpg');"></div>
         <img draggable="false" src="images/gzot1Pt.gif" class="flag_video">
         <img draggable="false" src="images/R5yccCK.gif" class="eagle_video">
         <p class="eagle_text">Rzeczpospolita<br>Polska</p>
         <div class="id_data_grid">
             <div class="data_holder">
-                <p class="data_title firstname" id="name"></p>
+                <p class="data_title firstname" id="name">Alan</p>
                 <p class="data_value">Imię (imiona)</p>
             </div>
             <div class="data_holder">
-                <p class="data_title surname" id="surname"></p>
+                <p class="data_title surname" id="surname">Surma</p>
                 <p class="data_value">Nazwisko</p>
             </div>
             <div class="data_holder">
-                <p class="data_title" id="nationality"></p>
+                <p class="data_title" id="nationality">Polskie</p>
                 <p class="data_value">Obywatelstwo</p>
             </div>
             <div class="data_holder">
-                <p class="data_title" id="birthday"></p>
+                <p class="data_title" id="birthday">04.10.2006</p>
                 <p class="data_value">Data urodzenia</p>
             </div>
             <div class="data_holder">
-                <p class="data_title" id="pesel"></p>
+                <p class="data_title" id="pesel">06300400136</p>
                 <p class="data_value">Numer PESEL</p>
             </div>
         </div>
@@ -178,24 +179,30 @@
         </div>
     </div>
 
-    <div class="services_grid" style="height: auto; width: auto;">
-        <div class="service_box">
-            <img class="service_box_icon" id="1" src="images/Pfan6Qa.png" onclick="sendTo('qr2')">
-            <p class="service_box_name">Potwierdź swoje dane</p>
-        </div>
-        <div class="service_box">
-            <img class="service_box_icon" id="2" src="images/KUMNgQC.png" onclick="sendTo('dane')">
-            <p class="service_box_name" style="width: 100px;">Dane dowodu <br>osobistego</p>
-        </div>
-        <div class="service_box">
-            <img class="service_box_icon" id="3" src="images/pobrane.png" onclick="sendTo('zastzrzez')">
-            <p class="service_box_name">Zastrzeż <br>PESEL</p>
-        </div>
-        <div class="service_box">
-            <img class="service_box_icon" id="4" src="images/ECjKGrW2.png" onclick="sendTo('pozostałe')">
-            <p class="service_box_name">Pozostałe skróty</p>
-        </div>
-    </div>
+<div class="services_grid" style="height: auto; width: auto;">
+
+    <a href="qr2.html" class="service_box">
+        <img class="service_box_icon" id="1" src="images/Pfan6Qa.png">
+        <p class="service_box_name">Potwierdź swoje dane</p>
+    </a>
+
+    <a href="dane.html" class="service_box">
+        <img class="service_box_icon" id="2" src="images/KUMNgQC.png">
+        <p class="service_box_name" style="width: 100px;">Dane dowodu <br>osobistego</p>
+    </a>
+
+    <a href="zastzrzez.html" class="service_box">
+        <img class="service_box_icon" id="3" src="images/pobrane.png">
+        <p class="service_box_name">Zastrzeż <br>PESEL</p>
+    </a>
+
+    <a href="pozostałe.html" class="service_box">
+        <img class="service_box_icon" id="4" src="images/ECjKGrW2.png">
+        <p class="service_box_name">Pozostałe skróty</p>
+    </a>
+
+</div>
+	
     
     <div class="other_grid" style="margin-top: 0px;">
         <!-- Pierwszy bottom_holder z tabelką z danymi dokumentu -->
@@ -204,26 +211,26 @@
                 <!-- Seria i numer -->
                 <div class="confirm_box" style="border: none;">
                     <p class="box_top">Seria i numer</p>
-                    <b><p class="box_value" id="seria_numer" style="font-size: 25px;"></p></b>
+                    <b><p class="box_value" id="seria_numer" style="font-size: 25px;">VWT 976099</p></b>
                     <button class="main_button">Kopiuj</button>
                 </div>
                 <!-- Organ wydający -->
                 <div class="confirm_box">
                     <p class="box_top">Termin ważności</p>
-                    <b><p class="box_value" id="waznosc" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="waznosc" style="font-size: 22px;">01.01.2028</p></b>
                 </div>
                 <!-- Termin ważności -->
                 <div class="confirm_box">
                     <p class="box_top">Data wydania</p>
-                    <b><p class="box_value" id="wydany" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="wydany" style="font-size: 22px;">01.01.2018</p></b>
                 </div>
                 <div class="confirm_box">
                     <p class="box_top">Imię ojca</p>
-                    <b><p class="box_value" id="fatherName" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="fatherName" style="font-size: 22px;">Dawid</p></b>
                 </div>
                 <div class="confirm_box">
                     <p class="box_top">Imię matki</p>
-                    <b><p class="box_value" id="motherName" style="font-size: 22px;"></p></b>
+                    <b><p class="box_value" id="motherName" style="font-size: 22px;">Agata</p></b>
                 </div>
         </div>
         
@@ -237,35 +244,35 @@
             <div class="additional_holder">
                 <div class="additional_grid">
                     <p class="additional_title">Nazwisko rodowe</p>
-                    <p class="additional_subtitle" id="familyName"></p>
+                    <p class="additional_subtitle" id="familyName">Surma</p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Płeć</p>
-                    <p class="additional_subtitle" id="sex"></p>
+                    <p class="additional_subtitle" id="sex">Mężczyzna</p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Nazwisko rodowe ojca</p>
-                    <p class="additional_subtitle" id="fathersFamilyName"></p>
+                    <p class="additional_subtitle" id="fathersFamilyName">Surma</p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Nazwisko rodowe matki</p>
-                    <p class="additional_subtitle" id="mothersFamilyName"></p>
+                    <p class="additional_subtitle" id="mothersFamilyName">Nowak</p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Miejsce urodzenia</p>
-                    <p class="additional_subtitle" id="birthPlace"></p>
+                    <p class="additional_subtitle" id="birthPlace">Głogów</p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Kraj urodzenia</p>
-                    <p class="additional_subtitle" id="countryOfBirth"></p>
+                    <p class="additional_subtitle" id="countryOfBirth">Polska</p>
                 </div>
                 <div class="additional_grid">
                     <p class="additional_title">Adres zameldowania na pobyt stały</p>
-                    <p class="additional_subtitle" id="adress"></p>
+                    <p class="additional_subtitle" id="adress">Morska 4</p>
                 </div>
                 <div class="additional_grid" style="border-bottom: none;">
                     <p class="additional_title">Data zameldowania na pobyt stały</p>
-                    <p class="additional_subtitle home_date"></p>
+                    <p class="additional_subtitle home_date">28.03.2010</p>
                 </div>
             </div>
         </div>

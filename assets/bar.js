@@ -2,6 +2,9 @@
 var params = new URLSearchParams(window.location.search);
 
 function sendTo(url){
+    if (!url.endsWith(".html")) {
+        url += ".html";
+    }
     location.href = `/${url}?` + params;
 }
 
